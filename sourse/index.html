@@ -1,12 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Свежесваренный кофе "Drink2Go"</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
-<body>
-    
+<body class="page__body">
+  <h1 class="visually-hidden" lang="en">Свежесваренный кофе "Drink2Go"</h1>
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="img/logotype-phone.svg" width="32" height="36" alt="Drink2Go">
+    </a>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <div class="main-nav__list user-list">
+          <a class="user-list__login" href="login.html">
+            <svg class="user-list__login-icon" width="16" height="16">
+              <!-- <use xlink:href="img/sprite.svg#icon-login"></use> -->
+            </svg>
+            Войти
+          </a>
+        </div>
+        <div class="main-nav__list cart">
+          <a class="cart__enter" href="cart.html">
+            <svg class="cart__enter-icon" width="16" height="16">
+              <!-- <use xlink:href="img/sprite.svg#icon-login"></use> спрайт корзины -->
+            </svg>
+            Корзина
+          </a>
+        </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Каталог
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Доставка
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              О нас
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__list user-list">
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="slider-promo">
+      <div class="slider-promo__arrowleft">
+        <svg></svg>
+      </div>
+      <div class="slider-promo__card">
+        <img src="#" alt="Изображение напитка">
+      </div>
+      <div class="slider-promo slider-promo--new">
+        <p>НОВИНКА</p>
+      </div>
+      <div class="slider-promo__description">
+        <h2 class="slider-promo__description-intro">Декаф Флэт Уайт</h2>
+        <p class="slider-promo__description-info">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+        <p class="slider-promo__description-price">225р</p>
+        <button type="button">Заказать</button>
+      </div>
+      <div class="slider-promo__arrowright">
+        <svg></svg>
+      </div>
+    </section>
+    <section class="benefits">
+      <p class="benefits__banner">преимущества</p>
+      <h2 class="benefits__intro">Главные причины выбрать Drink2Go</h2>
+      <div class="benefits__item">
+        <img class="benefits__item-img" src="#" alt="Часы">
+        <h3 class="benefits__item-intro">Скорость</h3>
+        <p class="benefits__item-info">Готовый напиток всегда под рукой — просто открой банку</p>
+      </div>
+      <div class="benefits__item">
+        <img class="benefits__item-img" src="#" alt="Карман">
+        <h3 class="benefits__item-intro">Удобство</h3>
+        <p class="benefits__item-info">Легко помещается и в карман,
+          и в маленькую сумочку</p>
+      </div>
+      <div class="benefits__item">
+        <img class="benefits__item-img" src="#" alt="Молния">
+        <h3 class="benefits__item-intro">Бодрость</h3>
+        <p class="benefits__item-info">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+      </div>
+      <div class="benefits__item">
+        <img class="benefits__item-img" src="#" alt="Листик">
+        <h3 class="benefits__item-intro">Экологичность</h3>
+        <p class="benefits__item-info">Вся упаковка сделана
+          из перерабатываемых материалов</p>
+      </div>
+    </section>
+    <section class="catalog">
+      <p class="catalog__banner">Каталог</p>
+      <h2 class="catalog__intro">Каталог кофейных напитков</h2>
+      <form class="catalog__filter">
+        <div class="catalog__range">
+          <p class="catalog__range-intro">Цена</p>
+          <input class="catalog__range-input" type="range" id="price" name="price" min="0" max="900">
+          <p class="catalog__range-min">0</p>
+          <p class="catalog__range-max">900</p>
+        </div>
+        <div class="catalog__radio radio">
+          <ul class="radio__wrapper">
+            <li class="radio__item">
+              <label class="radio__label" for="">
+                <input class="radio__input" type="radio" name="" id="" value="">
+                <span class="radio__icon"></span>
+                Неважно
+              </label>
+            </li>
+            <li class="radio__item">
+              <label class="radio__label" for="">
+                <input class="radio__input" type="radio" name="" id="" value="">
+                <span class="radio__icon"></span>
+                Только животное
+              </label>
+            </li>
+            <li class="radio__item">
+              <label class="radio__label" for="">
+                <input class="radio__input" type="radio" name="" id="" value="">
+                <span class="radio__icon"></span>
+                Только растительное
+              </label>
+            </li>
+            <li class="radio__item">
+              <label class="radio__label" for="">
+                <input class="radio__input" type="radio" name="" id="" value="">
+                <span class="radio__icon"></span>
+                Без молока
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__checkbox checkbox">
+          <ul class="checkbox__wrapper">
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="" value="" checked>
+              <span class="checkbox__icon"></span>
+              Бразилия
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="" value="">
+              <span class="checkbox__icon"></span>
+              Эфиопия
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="" value="">
+              <span class="checkbox__icon"></span>
+              Колумбия
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="" value="">
+              <span class="checkbox__icon"></span>
+              Коста-Рика
+              </label>
+            </li>
+            <li class="checkbox__item">
+              <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="" value="">
+              <span class="checkbox__icon"></span>
+              Перу
+              </label>
+            </li>
+          </ul>
+
+        </div>
+        <button>Сбросить фильтр</button>
+      </form>
+
+    </section>
+  </main>
 </body>
 </html>
