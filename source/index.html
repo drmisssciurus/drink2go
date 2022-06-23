@@ -5,16 +5,17 @@
     <title>Свежесваренный кофе "Drink2Go"</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body class="page__body">
   <h1 class="visually-hidden" lang="en">Свежесваренный кофе "Drink2Go"</h1>
   <header class="main-header">
-    <a class="main-header__logo">
-      <img src="img/logotype-phone.svg" width="32" height="36" alt="Drink2Go">
-    </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
+        <a class="main-nav__logo">
+          <img src="img/logotype-phone.svg" width="32" height="36" alt="Drink2Go">
+        </a>
         <div class="main-nav__list user-list">
           <a class="user-list__login" href="login.html">
             <svg class="user-list__login-icon" width="16" height="16">
@@ -56,9 +57,6 @@
             </a>
           </li>
         </ul>
-        <div class="main-nav__list user-list">
-
-        </div>
       </div>
     </nav>
   </header>
@@ -67,6 +65,7 @@
       <div class="slider-promo__arrowleft">
         <svg></svg>
       </div>
+      <div class="slider-promo__wrapper">
       <div class="slider-promo__card">
         <img src="#" alt="Изображение напитка">
       </div>
@@ -78,6 +77,7 @@
         <p class="slider-promo__description-info">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
         <p class="slider-promo__description-price">225р</p>
         <button type="button">Заказать</button>
+      </div>
       </div>
       <div class="slider-promo__arrowright">
         <svg></svg>
@@ -113,11 +113,11 @@
       <p class="catalog__banner">Каталог</p>
       <h2 class="catalog__intro">Каталог кофейных напитков</h2>
       <form class="catalog__filter">
-        <div class="catalog__range">
-          <p class="catalog__range-intro">Цена</p>
-          <input class="catalog__range-input" type="range" id="price" name="price" min="0" max="900">
-          <p class="catalog__range-min">0</p>
-          <p class="catalog__range-max">900</p>
+        <div class="catalog__range range">
+          <p class="range-intro">Цена</p>
+          <input class="range-input" type="range" id="price" name="price" min="0" max="900">
+          <p class="range-min">0</p>
+          <p class="range-max">900</p>
         </div>
         <div class="catalog__radio radio">
           <ul class="radio__wrapper">
