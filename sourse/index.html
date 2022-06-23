@@ -5,6 +5,7 @@
     <title>Свежесваренный кофе "Drink2Go"</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page__body">
   <h1 class="visually-hidden" lang="en">Свежесваренный кофе "Drink2Go"</h1>
@@ -61,7 +62,7 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="page__main">
     <section class="slider-promo">
       <div class="slider-promo__arrowleft">
         <svg></svg>
@@ -188,12 +189,154 @@
               </label>
             </li>
           </ul>
-
         </div>
         <button>Сбросить фильтр</button>
       </form>
-
+       <div class="catalog-wrapper">
+        <fieldset class="catalog__sort sort">
+          <label class="sort__name" for="">Сортировка:</label>
+          <select class="sort__value" name="" id="">
+            <option value="">по умолчанию</option>
+            <option value="">сначала дорогие</option>
+            <option value="">сначала дешевые</option>
+            <option value="">высокий рейтинг</option>
+          </select>
+        </fieldset>
+        <div class="catalog__card card">
+          <ul class="card__wrapper">
+            <li class="card__item">
+              <img src="" alt="">
+              <h2>Декаф Флэт Уайт</h2>
+              <p>Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+                <div class="card__price price">
+                  <p class="price__walue">225</p>
+                  <button class="price__button button">
+                    <img class="button-img" src="">
+                    В корзину
+                  </button>
+                </div>
+            </li>
+            <li class="card__item">
+              <img src="" alt="">
+              <h2>Декаф Флэт Уайт</h2>
+              <p>Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+                <div class="card__price price">
+                  <p class="price__walue">225</p>
+                  <button class="price__button button">
+                    <img class="button-img" src="">
+                    В корзину
+                  </button>
+                </div>
+            </li>
+            <li class="card__item">
+              <img src="" alt="">
+              <h2>Декаф Флэт Уайт</h2>
+              <p>Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+                <div class="card__price price">
+                  <p class="price__walue">225</p>
+                  <button class="price__button button">
+                    <img class="button-img" src="">
+                    В корзину
+                  </button>
+                </div>
+            </li>
+            <li class="card__item">
+              <img src="" alt="">
+              <h2>Декаф Флэт Уайт</h2>
+              <p>Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+                <div class="card__price price">
+                  <p class="price__walue">225</p>
+                  <button class="price__button button">
+                    <img class="button-img" src="">
+                    В корзину
+                  </button>
+                </div>
+            </li>
+            <li class="card__item">
+              <img src="" alt="">
+              <h2>Декаф Флэт Уайт</h2>
+              <p>Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+                <div class="card__price price">
+                  <p class="price__walue">225</p>
+                  <button class="price__button button">
+                    <img class="button-img" src="">
+                    В корзину
+                  </button>
+                </div>
+            </li>
+            <li class="card__item">
+              <img src="" alt="">
+              <h2>Декаф Флэт Уайт</h2>
+              <p>Кофе без кофеина из Эфиопии
+                с натуральным фермерским молоком</p>
+                <div class="card__price price">
+                  <p class="price__walue">225</p>
+                  <button class="price__button button">
+                    <img class="button-img" src="">
+                    В корзину
+                  </button>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__pagination pagination">
+          <ul class="pagination__wrapper">
+            <li class="pagination__item">назад</li>
+            <li class="pagination__item">1</li>
+            <li class="pagination__item">2</li>
+            <li class="pagination__item">3</li>
+            <li class="pagination__item">вперед</li>
+          </ul>
+        </div>
+       </div>
+    </section>
+    <section class="map">
+      <div class="map__wrapper"></div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__social social">
+        <a class="social__logo" href="">LOGO</a>
+        <ul class="social__wrapper">
+          <li class="social__item">VK</li>
+          <li class="social__item">PINTEREST</li>
+          <li class="social__item">одноклассники</li>
+        </ul>
+      </div>
+      <div class="footer__block-group">
+        <div class="footer__item">
+          <h3 class="footer__header">Интернет-магазин</h3>
+          <ul class="footer__list">
+            <li>КАТАЛОГ</li>
+            <li>ДОСТАВКА</li>
+            <li>СПОСОБ ОПЛАТЫ</li>
+            <li>О НАС</li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__header">Медиа</h3>
+           <ul class="footer__list">
+            <li>БЛОГ</li>
+            <li>ИНФОРМАЦИЯ ДЛЯ СМИ</li>
+            <li>ПРАВОВАЯ ИНФОРМАЦИЯ</li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__header">Контакты</h3>
+           <ul class="footer__list">
+            <li>Санкт-Петербург, набережная реки Карповки, дом 5</li>
+            <li>+7 (999) 999-99-99</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__bottom">Разработано в HTML Academy</p>
+    </div>
+  </footer>
 </body>
 </html>
