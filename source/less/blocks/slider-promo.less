@@ -1,5 +1,68 @@
 .slider-promo {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: @flat-white;
+
+  &--new {
+    margin: 0 auto;
+    padding: 0;
+    color: @primary;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.slider-promo__wrapper {
+  padding-bottom: 60px;
+}
+
+.slider-promo__arrowleft,
+.slider-promo__arrowright {
+  position: absolute;
+}
+
+.slider-promo__card {
+  padding: 20px 20px 10px 20px;
+}
+
+.slider-promo__description-intro {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  padding: 0 20px;
+}
+
+.slider-promo__description-info {
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0 26px;
+}
+
+.slider-promo__description-wrapper {
   display: flex;
   flex-direction: row;
-  background-color: @flat-white;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-promo__description-price {
+  font-size: 20px;
+  line-height: 32px;
+  padding: 3px;
+
+  &--del {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: @primary;
+  }
+}
+
+.slider-promo__description-price-button {
+  padding: 8px 20px;
+  margin-left: 20px;
 }
