@@ -1,13 +1,27 @@
 @font-face {
   font-family: "montserrat";
-  src: local("montserrat"), url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("ttf");
+  src: local("montserrat"), url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "montserrat";
-  src: local("montserratbold"), url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  src: local("montserratsemibold"), url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "montserrat";
+  src: local("montserratsemibold"), url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "montserrat";
+  src: local("montserratbold"), url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -192,12 +206,15 @@ li {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  padding-bottom: 30px;
+  padding: 0 20px 30px;
 }
 .catalog {
   width: 320px;
   margin: 0 auto;
   background-color: #F8F8F8;
+}
+.catalog__filter {
+  padding: 0 20px 48px;
 }
 .catalog__banner {
   font-weight: 700;
@@ -212,6 +229,14 @@ li {
   font-size: 24px;
   line-height: 36px;
   padding-bottom: 30px;
+}
+.catalog__filter-button {
+  background-color: #FFFFFF;
+  color: #7859CF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 67px;
 }
 .range {
   display: flex;
@@ -272,5 +297,156 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+.sort {
+  border: none;
+}
+.sort__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sort__value {
+  border: none;
+  background-color: inherit;
+  color: #7859CF;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.card__item {
+  background-color: #FFFFFF;
+  margin: 20px;
+}
+.card__item-img {
+  margin: 0 auto;
+  padding: 40px 0 24px;
+}
+.card__item-intro {
+  padding-left: 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+.card__item-info {
+  padding: 0 30px 0 20px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 0 20px;
+}
+.price__walue {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+.price__button {
+  padding: 8px 20px;
+}
+.price__button-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.pagination__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 20px 60px;
+}
+.pagination__item {
+  padding: 8px 20px;
+  background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7859CF;
+}
+.pagination__item--choose {
+  background-color: inherit;
+  color: #333333;
+  font-weight: 600;
+}
+.pagination__item-word {
+  display: none;
+}
+.pagination__item-icon {
+  display: none;
+}
+.footer {
+  width: 320px;
+  margin: 0 auto;
+}
+.footer__item {
+  border-top: 1px solid #F0EBFF;
+  padding: 20px;
+  text-align: left;
+}
+.footer__item:nth-child(3) {
+  border-bottom: 1px solid #F0EBFF;
+}
+.footer__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7859CF;
+  padding-bottom: 20px;
+}
+.footer__list {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+.footer__list li {
+  padding-bottom: 15px;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+}
+.social__logo {
+  padding: 22px 0 22px 20px;
+}
+.social__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.social__item {
+  padding-left: 39px;
+}
+.bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #BDBDBD;
+  padding: 20px 30px 30px 20px;
+}
+.bottom__logo {
+  padding-left: 5px;
+}
+.list__container {
+  display: flex;
+  flex-direction: row;
+}
+.list__icon {
+  padding-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
