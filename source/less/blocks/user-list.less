@@ -1,3 +1,20 @@
+.user-list__login {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .user-list__login-name {
   display: none;
+
+  @media (min-width: @desktop-width) {
+   display: block;
+  }
+}
+
+.user-list__login-icon {
+  @media (min-width: @desktop-width) {
+   padding-right: 10px;
+  }
 }

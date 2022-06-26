@@ -1,3 +1,38 @@
 .site-list {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 20px;
+  }
+}
+
+.site-list__item {
+  width: 320px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 103px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--active {
+      color: @primary;
+      border-bottom: 2px solid @primary;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 20px;
+  }
 }

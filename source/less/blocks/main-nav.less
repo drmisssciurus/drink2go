@@ -1,10 +1,48 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
 }
 
 .main-nav__logo {
-  padding: 12px 90px 12px 20px;
+  margin: 12px 90px 12px 20px;
+  width: 32px;
+  height: 36px;
+  background-image: url("../img/logotype-phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 83px;
+    margin-right: 0;
+    background-image: url("../img/logotype-short.png");
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 170px;
+    background-image: url("../img/logotype-desktop.svg");
+  }
+}
+
+.main-nav__shop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 175px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    padding-left: 20px;
+  }
 }
 
 .main-nav__wrapper {
@@ -14,7 +52,18 @@
   align-items: center;
 }
 
+.main-nav__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
 .main-nav__toggle {
   border: none;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

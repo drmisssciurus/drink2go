@@ -1,8 +1,25 @@
 .list__container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
 }
 
 .list__icon {
-  padding-right: 10px;
+  width: 13px;
+  height: 16px;
+  margin-right: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--mark {
+    background-image: url("../img/icons/mark.svg");
+  }
+
+  &--tel {
+    background-image: url("../img/icons/tel.svg");
+  }
+}
+
+.list__info {
+  width: 80%;
 }
