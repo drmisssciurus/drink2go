@@ -55,7 +55,7 @@
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 140px, 230px, 240px;
   }
 
 }
@@ -67,4 +67,25 @@
   font-size: 16px;
   line-height: 24px;
   padding: 8px 67px;
+
+  &:hover {
+    color: @white;
+  }
+
+  &:focus {
+    color: @white;
+  }
+
+  &:active {
+    color: @white;
+  }
+
+  &:disabled {
+    background-color: @light-grey;
+    color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 8px 47px;
+  }
 }

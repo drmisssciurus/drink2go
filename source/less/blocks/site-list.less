@@ -1,7 +1,15 @@
 .site-list {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  width: 320px;
+  background-color: @white;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
+    width: auto;
+    position: inherit;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,6 +17,24 @@
 
   @media (min-width: @desktop-width) {
     padding-right: 20px;
+  }
+}
+
+.site-list li {
+  padding: 20px 0;
+  border-top: 1px solid @secondary;
+
+  &:nth-child(4) {
+    border-bottom: 1px solid @secondary;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border-top: none;
+
+    &:nth-child(4) {
+      border-bottom: none;
+  }
   }
 }
 

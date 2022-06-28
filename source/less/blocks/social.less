@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-right: 30px;
+
 
   @media (min-width: @desktop-width) {
     flex-direction: column;
@@ -55,10 +55,39 @@
 }
 
 .social__item {
-  padding-left: 39px;
+  padding: 0 10px;
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
     padding-right: 39px;
+  }
+}
+
+.social__item-svg {
+  padding: 10px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: @secondary;
+
+    path {
+    fill: @primary;
+    }
+  }
+
+  &:focus {
+    background-color: @secondary;
+
+    path {
+    fill: @primary;
+    }
+  }
+
+  &:active {
+    background: rgba(@primary, 0.25);
+
+    path {
+      fill: @primary;
+    }
   }
 }

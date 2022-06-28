@@ -11,8 +11,23 @@
   }
 }
 
+.pagination__item--choose {
+  &:hover {
+    background-color: inherit;
+  }
+
+  &:focus {
+    background-color: inherit;
+  }
+
+  &:active {
+    background-color: inherit;
+  }
+}
+
 .pagination__item {
   padding: 8px 20px;
+  border-radius: 4px;
   background-color: @white;
   font-weight: 400;
   font-size: 16px;
@@ -31,6 +46,25 @@
 
   &:nth-child(6) {
     display: none;
+  }
+
+  &:hover {
+    background-color: @primary-lighter;
+    color: @white;
+  }
+
+  &:focus {
+    background-color: @primary-lighter;
+    color: @white;
+  }
+
+  &:active {
+    background-color: @primary-darker;
+    color: @white;
+  }
+
+  &:disabled {
+    background-color: @light-grey;
   }
 
   @media (min-width: @tablet-width) {
@@ -54,3 +88,4 @@
     }
   }
 }
+

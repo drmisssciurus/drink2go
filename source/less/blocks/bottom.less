@@ -9,8 +9,36 @@
   color: @grey;
   padding: 20px 30px 30px 20px;
 
+  &:hover {
+    color: @primary-lighter;
+  }
+
+  &:focus {
+    color: @primary-lighter;
+  }
+
+  &:active {
+    color: @primary-darker;
+  }
+
   @media (min-width: @desktop-width) {
     width: 1440px;
+  }
+}
+
+.bottom svg {
+  path {
+    &:hover {
+      fill: @primary-lighter;
+    }
+
+    &:focus {
+      fill: @primary-lighter;
+    }
+
+    &:active {
+      fill: @primary-darker;
+    }
   }
 }
 
