@@ -105,6 +105,7 @@ li {
   }
 }
 .main-nav__logo {
+  display: block;
   margin: 12px 90px 12px 20px;
   width: 32px;
   height: 36px;
@@ -116,7 +117,7 @@ li {
   .main-nav__logo {
     width: 83px;
     margin-right: 0;
-    background-image: url("../img/logotype-short.png");
+    background-image: url("../img/logotype-short.svg");
   }
 }
 @media (min-width: 1440px) {
@@ -164,6 +165,7 @@ li {
   width: 320px;
   margin: 0 auto;
   display: block;
+  position: relative;
   background-color: #F3EBE1;
 }
 .slider-promo--new {
@@ -214,6 +216,18 @@ li {
     justify-content: center;
   }
 }
+.slider-promo__card-wrapper {
+  width: 320px;
+  height: 320px;
+  background-image: url("../img/flat-white-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .slider-promo__card-wrapper {
+    background-image: url("../img/flat-white-mobile@2x.png");
+  }
+}
 @media (min-width: 768px) {
   .slider-promo__card-wrapper {
     display: block;
@@ -224,8 +238,6 @@ li {
     width: 476px;
     height: 476px;
     background-image: url("../img/flat-white-tablet.png");
-    background-position: center;
-    background-repeat: no-repeat;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
@@ -299,7 +311,7 @@ li {
 }
 @media (min-width: 1440px) {
   .slider-promo__description-info {
-    padding: 0;
+    padding: 0 55px 0 0;
   }
 }
 .slider-promo__description-wrapper {
@@ -328,6 +340,28 @@ li {
 .slider-promo__description-price-button {
   padding: 8px 20px;
   margin-left: 20px;
+}
+.slider-promo__arrowleft {
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+}
+@media (min-width: 768px) {
+  .slider-promo__arrowleft {
+    left: 34px;
+  }
+}
+.slider-promo__arrowright {
+  display: block;
+  position: absolute;
+  right: 4px;
+  top: 50%;
+}
+@media (min-width: 768px) {
+  .slider-promo__arrowright {
+    right: 34px;
+  }
 }
 .site-list {
   display: none;
@@ -391,6 +425,8 @@ li {
 @media (min-width: 768px) {
   .cart__enter {
     padding-right: 45px;
+    display: flex;
+    flex-direction: row;
   }
 }
 @media (min-width: 1440px) {
@@ -818,6 +854,11 @@ li {
   .pagination__item:nth-child(7) {
     display: none;
   }
+}
+.map {
+  width: 100%;
+  height: 500px;
+  background-color: transparent;
 }
 .footer {
   width: 320px;

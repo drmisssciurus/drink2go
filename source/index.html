@@ -5,6 +5,10 @@
     <title>Свежесваренный кофе "Drink2Go"</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
 </head>
@@ -70,7 +74,9 @@
   <main class="page__main">
     <section class="slider-promo">
       <div class="slider-promo__arrowleft">
-        <svg></svg>
+        <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF"/>
+        </svg>
       </div>
       <div class="slider-promo__wrapper">
         <div class="slider-promo__card-wrapper"></div>
@@ -88,7 +94,9 @@
         </div>
       </div>
       <div class="slider-promo__arrowright">
-        <svg></svg>
+        <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z" fill="#7859CF"/>
+        </svg>
       </div>
     </section>
     <section class="benefits">
@@ -134,7 +142,8 @@
         <div class="catalog__filter-container">
         <div class="catalog__range range">
           <p class="range-intro">Цена</p>
-          <input class="range-input" type="range" id="price" name="price" min="0" max="900">
+          <input class="range-input" id="price" name="price" type="range" min="0" max="900">
+          <!-- <div class="ad-form__slider"></div> -->
           <div class="range__wrapper">
             <p class="range-min">0</p>
               <svg class="range-stroke" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -368,7 +377,7 @@
       </div>
     </section>
     <section class="map">
-      <div class="map__wrapper"></div>
+      <div class="map__wrapper" id="map"></div>
     </section>
   </main>
   <footer class="footer">
@@ -434,8 +443,10 @@
       </div>
     </div>
   </footer>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  <script src="https://unpkg.com/nouislider@14.6.3/distribute/nouislider.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
    crossorigin=""></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

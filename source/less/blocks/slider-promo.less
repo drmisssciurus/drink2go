@@ -2,7 +2,7 @@
   width: 320px;
   margin: 0 auto;
   display: block;
-  // position: relative;
+  position: relative;
   background-color: @flat-white;
 
   &--new {
@@ -55,6 +55,16 @@
 }
 
 .slider-promo__card-wrapper {
+  width: 320px;
+  height: 320px;
+  background-image: url("../img/flat-white-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/flat-white-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     display: block;
     position: absolute;
@@ -64,8 +74,6 @@
     width: 476px;
     height: 476px;
     background-image: url("../img/flat-white-tablet.png");
-    background-position: center;
-    background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/flat-white-tablet@2x.png");
@@ -137,7 +145,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
+    padding: 0 55px 0 0;
   }
 }
 
@@ -170,4 +178,26 @@
 .slider-promo__description-price-button {
   padding: 8px 20px;
   margin-left: 20px;
+}
+
+.slider-promo__arrowleft {
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: 34px;
+  }
+}
+
+.slider-promo__arrowright {
+  display: block;
+  position: absolute;
+  right: 4px;
+  top: 50%;
+
+  @media (min-width: @tablet-width) {
+    right: 34px;
+  }
 }
