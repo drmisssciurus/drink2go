@@ -697,6 +697,40 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.radio__input {
+  -webkit-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.radio__label {
+  padding-left: 34px;
+}
+.radio__label--dis {
+  color: #BDBDBD;
+}
+.radio__icon {
+  position: absolute;
+  margin-left: -34px;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  background-color: #F8F8F8;
+  background-image: url(../img/icons/default-unch.svg);
+}
+.radio__input:checked + .radio__icon {
+  background-image: url(../img/icons/default-ch.svg);
+}
+.radio__input:hover + .radio__icon {
+  background-image: url(../img/icons/hover-round.svg);
+}
+.radio__input:disabled + .radio__icon {
+  background-image: url(../img/icons/dis-unch.svg);
+}
+.radio__input:checked:disabled + .radio__icon {
+  background-image: url(../img/icons/dis-ch.svg);
 }
 .checkbox {
   text-align: left;
@@ -710,6 +744,65 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  padding-bottom: 20px;
+}
+.checkbox__label {
+  display: flex;
+  align-items: center;
+}
+.checkbox__input {
+  margin-right: 10px;
+  position: relative;
+  width: 42px;
+  height: 24px;
+  -webkit-appearance: none;
+  background-color: #BDBDBD;
+  border-radius: 20px;
+  outline: none;
+}
+.checkbox__input:hover {
+  background-color: rgba(120, 89, 207, 0.25);
+  border: 2px solid #9070EC;
+  border-radius: 12px;
+}
+.checkbox__input:hover::before {
+  top: 0;
+  left: 0;
+}
+.checkbox__input::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+.checkbox__input::before:hover {
+  top: 0;
+  left: 0;
+}
+.checkbox__input:checked {
+  background-color: #7859CF;
+}
+.checkbox__input:checked::before {
+  left: 20px;
+}
+.checkbox__input:checked:hover::before {
+  left: 18px;
+}
+.checkbox__input:checked:disabled {
+  background-color: #E2E2E2;
+}
+.checkbox__input:checked:disabled::before {
+  background-color: #BDBDBD;
+}
+.checkbox__input:disabled {
+  background-color: #E2E2E2;
+}
+.checkbox__name--disabled {
+  color: #BDBDBD;
 }
 .sort {
   border: none;

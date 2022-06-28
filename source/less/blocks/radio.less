@@ -12,4 +12,45 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.radio__input {
+  appearance: none;
+  position: absolute;
+}
+
+.radio__label {
+  padding-left: 34px;
+
+  &--dis {
+    color: @grey;
+  }
+}
+
+.radio__icon {
+  position: absolute;
+  margin-left: -34px;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+  background-color: @lightest-grey;
+  background-image: url(../img/icons/default-unch.svg);
+}
+
+.radio__input:checked + .radio__icon {
+  background-image: url(../img/icons/default-ch.svg);
+}
+
+.radio__input:hover + .radio__icon {
+  background-image: url(../img/icons/hover-round.svg);
+}
+
+.radio__input:disabled + .radio__icon {
+  background-image: url(../img/icons/dis-unch.svg);
+}
+
+.radio__input:checked:disabled + .radio__icon {
+  background-image: url(../img/icons/dis-ch.svg);
 }
