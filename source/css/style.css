@@ -173,6 +173,109 @@ li {
     display: none;
   }
 }
+.site-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  width: 320px;
+  background-color: #FFFFFF;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .site-list {
+    width: auto;
+    position: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1440px) {
+  .site-list {
+    padding-right: 20px;
+  }
+}
+.site-list li {
+  padding: 20px 0;
+  border-top: 1px solid #F0EBFF;
+}
+.site-list li:nth-child(4) {
+  border-bottom: 1px solid #F0EBFF;
+}
+@media (min-width: 768px) {
+  .site-list li {
+    padding: 0;
+    border-top: none;
+  }
+  .site-list li:nth-child(4) {
+    border-bottom: none;
+  }
+}
+.site-list__item {
+  width: 320px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .site-list__item {
+    width: 103px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .site-list__item--active {
+    color: #7859CF;
+    border-bottom: 2px solid #7859CF;
+  }
+}
+@media (min-width: 1440px) {
+  .site-list__item {
+    padding-left: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .user-list__login {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.user-list__login-name {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .user-list__login-name {
+    display: block;
+  }
+}
+@media (min-width: 1440px) {
+  .user-list__login-icon {
+    padding-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .cart__enter {
+    padding-right: 45px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1440px) {
+  .cart__enter-icon {
+    padding-right: 10px;
+  }
+}
+.cart__enter-name {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .cart__enter-name {
+    display: block;
+  }
+}
 .slider-promo {
   width: 320px;
   margin: 0 auto;
@@ -375,109 +478,6 @@ li {
 @media (min-width: 768px) {
   .slider-promo__arrowright {
     right: 34px;
-  }
-}
-.site-list {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  width: 320px;
-  background-color: #FFFFFF;
-  z-index: 1;
-}
-@media (min-width: 768px) {
-  .site-list {
-    width: auto;
-    position: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 1440px) {
-  .site-list {
-    padding-right: 20px;
-  }
-}
-.site-list li {
-  padding: 20px 0;
-  border-top: 1px solid #F0EBFF;
-}
-.site-list li:nth-child(4) {
-  border-bottom: 1px solid #F0EBFF;
-}
-@media (min-width: 768px) {
-  .site-list li {
-    padding: 0;
-    border-top: none;
-  }
-  .site-list li:nth-child(4) {
-    border-bottom: none;
-  }
-}
-.site-list__item {
-  width: 320px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  .site-list__item {
-    width: 103px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .site-list__item--active {
-    color: #7859CF;
-    border-bottom: 2px solid #7859CF;
-  }
-}
-@media (min-width: 1440px) {
-  .site-list__item {
-    padding-left: 20px;
-  }
-}
-@media (min-width: 1440px) {
-  .user-list__login {
-    display: flex;
-    flex-direction: row;
-  }
-}
-.user-list__login-name {
-  display: none;
-}
-@media (min-width: 1440px) {
-  .user-list__login-name {
-    display: block;
-  }
-}
-@media (min-width: 1440px) {
-  .user-list__login-icon {
-    padding-right: 10px;
-  }
-}
-@media (min-width: 768px) {
-  .cart__enter {
-    padding-right: 45px;
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (min-width: 1440px) {
-  .cart__enter-icon {
-    padding-right: 10px;
-  }
-}
-.cart__enter-name {
-  display: none;
-}
-@media (min-width: 1440px) {
-  .cart__enter-name {
-    display: block;
   }
 }
 .benefits {
@@ -774,19 +774,19 @@ li {
   height: 24px;
   border-radius: 20px;
   background-color: #F8F8F8;
-  background-image: url(../img/icons/default-unch.svg);
+  background-image: url("../img/icons/default-unch.svg");
 }
 .radio__input:checked + .radio__icon {
-  background-image: url(../img/icons/default-ch.svg);
+  background-image: url("../img/icons/default-ch.svg");
 }
 .radio__input:hover + .radio__icon {
-  background-image: url(../img/icons/hover-round.svg);
+  background-image: url("../img/icons/hover-round.svg");
 }
 .radio__input:disabled + .radio__icon {
-  background-image: url(../img/icons/dis-unch.svg);
+  background-image: url("../img/icons/dis-unch.svg");
 }
 .radio__input:checked:disabled + .radio__icon {
-  background-image: url(../img/icons/dis-ch.svg);
+  background-image: url("../img/icons/dis-ch.svg");
 }
 .checkbox {
   text-align: left;
@@ -812,6 +812,7 @@ li {
   width: 42px;
   height: 24px;
   -webkit-appearance: none;
+          appearance: none;
   background-color: #BDBDBD;
   border-radius: 20px;
   outline: none;
@@ -826,7 +827,7 @@ li {
   left: 0;
 }
 .checkbox__input::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 2px;
@@ -906,7 +907,7 @@ li {
 }
 @media (min-width: 1440px) {
   .card__item--choosed {
-    box-shadow: 0px 5px 15px rgba(51, 51, 51, 0.15);
+    box-shadow: 0 5px 15px rgba(51, 51, 51, 0.15);
   }
 }
 .card__item-img {
@@ -966,15 +967,6 @@ li {
     justify-content: end;
     text-align: right;
   }
-}
-.pagination__item--choose:hover {
-  background-color: inherit;
-}
-.pagination__item--choose:focus {
-  background-color: inherit;
-}
-.pagination__item--choose:active {
-  background-color: inherit;
 }
 .pagination__item {
   padding: 8px 20px;

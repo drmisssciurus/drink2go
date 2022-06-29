@@ -219,22 +219,22 @@
             <li class="checkbox__item">
               <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" name="coffe" value="peru" disabled>
-              <span class="checkbox__name checkbox__name--disabled" >Перу</span>
+              <span class="checkbox__name checkbox__name--disabled">Перу</span>
               </label>
             </li>
           </ul>
         </div>
         </div>
-        <button class="button catalog__filter-button">Сбросить фильтр</button>
+        <button class="button catalog__filter-button" type="button">Сбросить фильтр</button>
       </form>
-       <div class="catalog-wrapper">
+        <div class="catalog-wrapper">
         <fieldset class="catalog__sort sort">
-          <label class="sort__name" for="">Сортировка:</label>
-          <select class="sort__value" name="" id="">
-            <option value="">по умолчанию</option>
-            <option value="">сначала дорогие</option>
-            <option value="">сначала дешевые</option>
-            <option value="">высокий рейтинг</option>
+          <label class="sort__name" for="sort">Сортировка:</label>
+          <select class="sort__value" name="sort" id="sort">
+            <option value="base">по умолчанию</option>
+            <option value="expensive-first">сначала дорогие</option>
+            <option value="cheap-first">сначала дешевые</option>
+            <option value="hight-rate">высокий рейтинг</option>
           </select>
         </fieldset>
         <div class="catalog__card card">
@@ -242,16 +242,17 @@
             <li class="card__item">
               <a href="catalog-item.html">
                 <picture>
+                  <!-- шаблон для адаптациии -->
                   <!-- <source srcset="img/coffee-can-1.webp 1x, img/coffee-can-1@2x.webp 2x" type="image/webp"> -->
                   <img class="card__item-img" src="img/coffee-can-1.png" width="130" height="190" alt="Банка с кофе" srcset="img/coffee-can-1@2x.png 2x">
                 </picture>
                 <h2 class="card__item-intro">Декаф Флэт Уайт</h2>
-             </a>
+              </a>
               <p class="card__item-info">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
                 <div class="card__price price">
                   <p class="price__walue">225₽</p>
-                  <button class="price__button button">
+                  <button class="price__button button" type="button">
                     <svg class="price__button-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z" fill="white"/>
                     </svg>
@@ -262,6 +263,7 @@
             <li class="card__item  card__item--choosed">
               <a href="catalog-item.html">
                 <picture>
+                  <!-- шаблон для адаптациии -->
                   <!-- <source srcset="img/coffee-can-2.webp 1x, img/coffee-can-2@2x.webp 2x" type="image/webp"> -->
                   <img class="card__item-img" src="img/coffee-can-2.png" width="130" height="190" alt="Банка с кофе" srcset="img/coffee-can-2@2x.png 2x">
                 </picture>
@@ -271,7 +273,7 @@
                 с натуральным фермерским молоком</p>
                 <div class="card__price price">
                   <p class="price__walue">225₽</p>
-                  <button class="price__button button">
+                  <button class="price__button button" type="button">
                     <svg class="price__button-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z" fill="white"/>
                     </svg>
@@ -282,6 +284,7 @@
             <li class="card__item">
               <a href="catalog-item.html">
                 <picture>
+                  <!-- шаблон для адаптациии -->
                   <!-- <source srcset="img/coffee-can-3.webp 1x, img/coffee-can-3@2x.webp 2x" type="image/webp"> -->
                   <img class="card__item-img" src="img/coffee-can-3.png" width="130" height="190" alt="Банка с кофе" srcset="img/coffee-can-3@2x.png 2x">
                 </picture>
@@ -291,7 +294,7 @@
                 с натуральным фермерским молоком</p>
                 <div class="card__price price">
                   <p class="price__walue">225₽</p>
-                  <button class="price__button button">
+                  <button class="price__button button" type="button">
                     <svg class="price__button-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z" fill="white"/>
                     </svg>
@@ -302,6 +305,7 @@
             <li class="card__item">
               <a href="catalog-item.html">
                 <picture>
+                  <!-- шаблон для адаптациии -->
                   <!-- <source srcset="img/coffee-can-4.webp 1x, img/coffee-can-4@2x.webp 2x" type="image/webp"> -->
                   <img class="card__item-img" src="img/coffee-can-4.png" width="130" height="190" alt="Банка с кофе" srcset="img/coffee-can-4@2x.png 2x">
                 </picture>
@@ -311,7 +315,7 @@
                 с натуральным фермерским молоком</p>
                 <div class="card__price price">
                   <p class="price__walue">225₽</p>
-                  <button class="price__button button">
+                  <button class="price__button button" type="button">
                     <svg class="price__button-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z" fill="white"/>
                     </svg>
@@ -322,6 +326,7 @@
             <li class="card__item">
               <a href="catalog-item.html">
                 <picture>
+                  <!-- шаблон для адаптациии -->
                   <!-- <source srcset="img/coffee-can-5.webp 1x, img/coffee-can-5@2x.webp 2x" type="image/webp"> -->
                   <img class="card__item-img" src="img/coffee-can-5.png" width="130" height="190" alt="Банка с кофе" srcset="img/coffee-can-5@2x.png 2x">
                 </picture>
@@ -331,7 +336,7 @@
                 с натуральным фермерским молоком</p>
                 <div class="card__price price">
                   <p class="price__walue">225₽</p>
-                  <button class="price__button button">
+                  <button class="price__button button" type="button">
                     <svg class="price__button-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z" fill="white"/>
                     </svg>
@@ -342,6 +347,7 @@
             <li class="card__item">
               <a href="catalog-item.html">
                 <picture>
+                  <!-- шаблон для адаптациии -->
                   <!-- <source srcset="img/coffee-can-6.webp 1x, img/coffee-can-6@2x.webp 2x" type="image/webp"> -->
                   <img class="card__item-img" src="img/coffee-can-6.png" width="130" height="190" alt="Банка с кофе" srcset="img/coffee-can-6@2x.png 2x">
                 </picture>
@@ -351,7 +357,7 @@
                 с натуральным фермерским молоком</p>
                 <div class="card__price price">
                   <p class="price__walue">225₽</p>
-                  <button class="price__button button">
+                  <button class="price__button button" type="button">
                     <svg class="price__button-icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6738 13.5219L13.6769 13.5H15.0238L14.9937 13.7105C14.8061 15.0242 13.6809 16 12.3539 16H3.64612C2.31905 16 1.19393 15.0242 1.00626 13.7105L0.190476 8L0 6.66667H1.34687H4.55556L4.33218 3.98618C4.15336 1.84036 5.84674 0 8 0C9.81376 0 11.3012 1.30578 11.6183 3H10.2473C9.95698 2.04197 9.06703 1.33333 8 1.33333C6.62679 1.33333 5.54687 2.50699 5.66091 3.87546L5.89351 6.66667H9.5V8H6.05787L6.28009 10.6667H9.71991L9.7338 10.5H11.0718L11.0579 10.6667H12.5V12H10.9468L10.7245 14.6667H12.3539C13.0174 14.6667 13.58 14.1788 13.6738 13.5219ZM4.71991 8H4.66667H1.53735L1.9183 10.6667H4.94213L4.71991 8ZM6.61342 14.6667L6.3912 12H9.6088L9.38658 14.6667H6.61342ZM5.05324 12L5.27547 14.6667H3.64612C2.98259 14.6667 2.42003 14.1788 2.32619 13.5219L2.10877 12H5.05324ZM15.8 10V7.2H13V5.8H15.8V3H17.2V5.8H20V7.2H17.2V10H15.8Z" fill="white"/>
                     </svg>
@@ -384,14 +390,16 @@
             </li>
           </ul>
         </div>
-       </div>
+        </div>
       </div>
     </section>
     <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
       <div class="map__canvas" id="map-canvas"></div>
     </section>
   </main>
   <footer class="footer">
+    <h1 class="visually-hidden">Интернет магазин, медиа, контакты</h1>
     <div class="footer__wrapper">
       <div class="footer__social social">
         <a class="social__logo" href=""></a>
@@ -426,7 +434,7 @@
         </div>
         <div class="footer__item">
           <h3 class="footer__header">Медиа</h3>
-           <ul class="footer__list">
+          <ul class="footer__list">
             <li>БЛОГ</li>
             <li>ИНФОРМАЦИЯ ДЛЯ СМИ</li>
             <li>ПРАВОВАЯ ИНФОРМАЦИЯ</li>
@@ -434,14 +442,14 @@
         </div>
         <div class="footer__item">
           <h3 class="footer__header">Контакты</h3>
-           <ul class="footer__list list">
+          <ul class="footer__list list">
             <li class="list__container">
               <span class="list__icon list__icon--mark"></span>
-              <span class="list__info">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+              <a class="list__info" href="https://goo.gl/maps/9GCWmkL4nmj2HuoR9">Санкт-Петербург, набережная реки Карповки, дом 5</a>
             </li>
             <li class="list__container">
               <span class="list__icon list__icon--tel"></span>
-              <span class="list__info">+7 (999) 999-99-99</span>
+              <a class="list__info" href="tel:+79999999999">+7 (999) 999-99-99</a>
             </li>
           </ul>
         </div>
